@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding: 0;
+
+}
+
+h1{
+    text-align: center;
+    padding:30px;
+    
+}
+
+section{
+    display: flex;
+}
+
+.box{
+        background-color: aqua;
+
+        border: 5px solid black;
+        margin: 50px;
+        height: 200px;
+        width: 600px;
+        background-color: grey;
+}
+
+
+
+h3{
+    border: 2px solid black;
+    text-align: end;
+    background-color: red;
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .box {
+        width: 50%; 
+    }
+    .box:nth-child(3) {
+        width: 100%; /* Third section takes up entire row in tablet view */
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .box {
+        width: 100%;
+        display: table-column; 
+    }
+}
+
